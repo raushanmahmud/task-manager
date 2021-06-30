@@ -3,6 +3,7 @@ import {client} from '../../api/client'
 import Cookies from 'js-cookie';
 
 const initialState = {
+    currentUrl : '/',
     user: null,
     isLoggedIn: false,
     token: (Cookies.get('token')) ? Cookies.get('token') : null
